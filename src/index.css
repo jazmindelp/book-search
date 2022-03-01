@@ -1,0 +1,353 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo 2', cursive;
+}
+
+body{
+  background-color: #fefadc;
+  color:black;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin-right: 1.8em;
+  margin-left: 1.8em;
+}
+
+.book-card{
+  display: flex;
+  flex-direction: row;
+  background-color:#f8f7ff ;
+  width: 340px;
+  height: auto;
+  min-height: 240px;
+  margin-right: 2.5em;
+  margin-bottom: 2.5em;
+  border-radius: 8px;
+  box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.09);
+  justify-content: flex-start;
+}
+
+.image{
+  width: 140px;
+  height: 100%;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: 0px 5px 25px #B7B7A4 ;
+}
+
+.book-info{
+  width: 100%;
+  padding-top: 0.75em;
+  position: relative;
+  word-break: break-word;
+  padding-bottom: 0.9em;
+}
+
+.rating{
+  padding-bottom: 8px;
+}
+.title{
+  letter-spacing: 0.07em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 auto 0;
+  
+}
+
+.text{
+  margin: 0 1em 0 1em;
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  padding-bottom: 0.6em;
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.02em;
+}
+
+.rating-stars{
+  margin-top: 0.1em;
+}
+
+.button-container{
+  width: 100%;
+  position: absolute;
+  bottom:8px;
+  left: 0.9em;
+ 
+}
+.more-btn{
+  background: #abc4ff;
+  border: none;
+  line-height: 1.3;
+  padding: 0.15rem;
+
+  width: 5em;
+  font-size: .9rem;
+  margin-top: 0;
+  border-radius: 3px;
+  box-shadow: 1.5px 3px 4px #b7b7a4 ;
+  border: #bbd0ff solid 0.020px;
+  color: #6b705c;
+
+}
+
+.more-btn:hover{
+  background-color: #b6ccfe;
+  transform: scale(1.02, 1.02);
+  box-shadow: 1.5px 3px 4px #6b705c ;
+  transition: ease-out 2ms;
+  color: #333330;
+  cursor: pointer;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.book-card:hover{
+ 
+    box-shadow: 0px 1px 10px 1px #b7b7a4;
+    transform: scale(1.1, 1.1);
+    transform-origin: top;
+    transition-duration: 100ms;
+    background-color: white;
+  
+}
+
+.col-header{
+  font-size: 2rem;
+  background: #f0efeb;
+  color: #a5a58d;
+  margin-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  letter-spacing: 0.1em;
+  padding-top: 0.4em;
+  margin-left: 0;
+  box-shadow: 0px 1px 6px #a5a58d ;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.about-me{
+  align-self: center;
+  font-size: 0.9rem;
+  color: #6F725A;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin: 0 4em;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  
+}
+.about-me:hover{
+  transform: scale(1.01, 1.01);
+  transition: ease-in-out 120ms;
+  letter-spacing: 0.1em;
+}
+ul{
+  margin-top: 0.7em;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  background-color: #f0efeb;
+  text-align: center;
+  box-shadow: 1px 5px 5px #f2efc7 ;
+  right: -1em;
+
+}
+
+li{
+  padding: 0.6em 2em;
+  line-height: 1;
+  letter-spacing: 0.09em;
+  font-size: 0.86rem;
+}
+
+a>.about-me{
+  font-size: 0.85rem;
+
+
+}
+li:hover{
+  transform: scale(1.02, 1.02);
+  background-color: #f0efebd2;
+  color: #333330;
+  transition: ease-in 70ms;
+  letter-spacing: 0.13em;
+}
+
+.search-bar{
+  border: none;
+  width: 100%;
+  margin: 0 0;
+  text-transform: capitalize;
+  font-size: 1.15rem;
+}
+
+input{
+  background-color: #f8f9fb;
+  outline: none;
+  letter-spacing: 0.01em;
+}
+
+.search-container{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  box-shadow: 1.5px 3px 4px #b7b7a4 ;
+  padding: 0.4em 0.6em 0.4em 2em;
+  background-color: #f8f9fb;
+  
+}
+
+.search-icon{
+
+  color: #6b705c;
+}
+
+.book-info-container{
+  background-color: #dbd7fa;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width:auto;
+  max-width: 60%;
+  height: auto;
+  align-content: center;
+  margin: 0em auto;
+  box-shadow: 4px 4px 25px #686763;
+  min-height: 505px;
+  margin-bottom:1.5em;
+  border-radius: 5px;
+  padding: 0 1em;
+  padding-bottom: 1em;
+  
+}
+
+.card-info-container{
+  display: flex;
+  flex-direction: column;
+  width:30%;
+  margin-top: 1em;
+  font-size: 0.87rem;
+}
+
+.info-content{
+  margin: 0 auto;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.card-info{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 2em;
+  width: 70%;
+}
+
+.book-title{
+  margin: 0 auto;
+  margin-top: 0.9em;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.close-btn{
+
+  margin-top: 0.4em;
+  position: absolute;
+  right: 14%;
+
+}
+
+.close-btn:hover{
+  cursor: pointer;
+}
+.description{
+  text-align: justify;
+
+  margin: 0.4em auto 0 auto;
+  letter-spacing: 0.015em;
+  line-height: 2;
+  width: 80%;
+  text-indent: 3em;
+  font-size: 0.95rem;
+}
+
+.sample-btn{
+  background: #abc4ff;
+  border: none;
+  line-height: 1;
+  padding: 0.2rem;
+  width: 8em;
+  height: 1.8em;
+  font-size: 0.95rem;
+  margin-top: 0;
+  border-radius: 3px;
+  box-shadow: 1.5px 3px 4px #b7b7a4 ;
+  border: #bbd0ff solid 0.020px;
+  color: #6b705c;
+ 
+}
+
+.sample-btn:hover{
+  background-color: #b6ccfe;
+  transform: scale(1.02, 1.02);
+  box-shadow: 1.5px 3px 4px #6b705c ;
+  transition: ease-out 2ms;
+  color: #333330;
+  cursor: pointer;
+}
+
+.sample-button-container{
+  margin: 0.4em 3.5em;
+  
+}
+
+.image-info{
+  box-shadow: 0px 5px 25px #B7B7A4 ;
+  border-radius: 3px;
+  margin: 0.9em auto 0.9em auto;
+  height: 47%;
+  width: 45%;
+  min-width: 150px;
+  max-height: 270px;
+}
+
+.loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #9B9B7A;
+}
